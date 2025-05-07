@@ -1,3 +1,4 @@
 .DS_Store
 .linear-prefs.json
+.*-cache.json
 prefs.plist

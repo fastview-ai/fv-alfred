@@ -3,7 +3,7 @@ const { execSync } = require("child_process");
 
 const dryRun = (() => {
   try {
-    if (process.env.DRY_RUN) return true;
+    if (process.env.DRY_RUN === "1") return true;
     const gitStatus = execSync("git status --porcelain").toString();
     return gitStatus
       .split("\n")

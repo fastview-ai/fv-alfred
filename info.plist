@@ -59,6 +59,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>B9C50AEC-5EF8-40AE-A48C-7A44E6F8ACE9</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Copy to clipboard</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>5CA7FF80-530F-4C54-BE26-D4CD697EE583</key>
 		<array>
@@ -179,6 +189,25 @@
 			<string>D7001DE8-27F5-41C0-93B3-D8282B029029</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>B9C50AEC-5EF8-40AE-A48C-7A44E6F8ACE9</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -494,28 +523,28 @@ Created by Omar Chehab (@oac)</string>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>330</real>
+			<real>440</real>
 		</dict>
 		<key>2070F8C5-B59A-4C15-947E-C003823F77A8</key>
 		<dict>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>540</real>
+			<real>650</real>
 		</dict>
 		<key>22299E4C-2DA4-4270-90D0-BC55053DD221</key>
 		<dict>
 			<key>xpos</key>
 			<real>530</real>
 			<key>ypos</key>
-			<real>225</real>
+			<real>335</real>
 		</dict>
 		<key>32AC4E08-866E-4724-B41A-AAC8167C415C</key>
 		<dict>
 			<key>xpos</key>
 			<real>280</real>
 			<key>ypos</key>
-			<real>225</real>
+			<real>335</real>
 		</dict>
 		<key>3BA38398-2266-4718-AAB3-91142449916F</key>
 		<dict>
@@ -529,42 +558,49 @@ Created by Omar Chehab (@oac)</string>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>435</real>
+			<real>545</real>
 		</dict>
 		<key>67760EE4-1659-41DF-A970-C9663FCD0F74</key>
 		<dict>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>225</real>
+			<real>335</real>
 		</dict>
 		<key>84D6F323-DE9B-4679-91DE-26BD4730E3D0</key>
 		<dict>
 			<key>xpos</key>
 			<real>280</real>
 			<key>ypos</key>
-			<real>120</real>
+			<real>230</real>
 		</dict>
 		<key>B4E70927-45E2-40F9-A4F2-FD6516B44DE5</key>
 		<dict>
 			<key>xpos</key>
 			<real>280</real>
 			<key>ypos</key>
-			<real>540</real>
+			<real>650</real>
+		</dict>
+		<key>B9C50AEC-5EF8-40AE-A48C-7A44E6F8ACE9</key>
+		<dict>
+			<key>xpos</key>
+			<real>280</real>
+			<key>ypos</key>
+			<real>120</real>
 		</dict>
 		<key>D1E50DD5-B328-432C-93F8-09DC15A8582C</key>
 		<dict>
 			<key>xpos</key>
 			<real>280</real>
 			<key>ypos</key>
-			<real>435</real>
+			<real>545</real>
 		</dict>
 		<key>D58E53AE-54F6-42EE-A6FC-85D449D2FC33</key>
 		<dict>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>120</real>
+			<real>230</real>
 		</dict>
 		<key>D7001DE8-27F5-41C0-93B3-D8282B029029</key>
 		<dict>
@@ -578,7 +614,7 @@ Created by Omar Chehab (@oac)</string>
 			<key>xpos</key>
 			<real>280</real>
 			<key>ypos</key>
-			<real>330</real>
+			<real>440</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -673,6 +709,8 @@ Scope: Comments: Read-only</string>
 	</array>
 	<key>variables</key>
 	<dict>
+		<key>DRY_RUN</key>
+		<string>0</string>
 		<key>FIGMA_FILE</key>
 		<string>lOPMkYrHGieCZLRbzLyoZ5</string>
 		<key>FIGMA_TEAM</key>
@@ -683,15 +721,19 @@ Scope: Comments: Read-only</string>
 		<string>fastview</string>
 		<key>NODE_PATH</key>
 		<string>/Users/oac/.nvm/versions/node/v22.14.0/bin/node</string>
+		<key>OFFLINE</key>
+		<string>0</string>
 		<key>VERCEL_PROJECT</key>
 		<string>fastviewai/sparrow-ml</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
+		<string>DRY_RUN</string>
+		<string>OFFLINE</string>
 		<string>NODE_PATH</string>
 	</array>
 	<key>version</key>
-	<string>3</string>
+	<string>4</string>
 	<key>webaddress</key>
 	<string>https://github.com/fastview-ai/fv-alfred</string>
 </dict>
